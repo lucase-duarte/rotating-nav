@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: rgb(29, 29, 29);
+}
+
+.container {
+  padding: 50px;
+  transition: transform linear .5s;
+  transform-origin: top left;
+  background-color: white;
+  transition: rotate linear .4s;
+}
+
+.rotate-container {
+  rotate: -20deg;
+}
+
+.circle {
+  background-color: rgb(250, 47, 98);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: -90px;
+  margin-top: -90px;
+  transition: rotate linear .4s;
+}
+
+.rotate-circle {
+  rotate: -70deg;
+}
+
+.btn {
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  background-color: transparent;
+  color: white;
+  border: 0;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.open {
+  left: 60%;
+}
+
+.close {
+  right: 60%;
+  transform: rotate(90deg);
+}
+
+.content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+small {
+  color: #555;
+  font-style: italic;
+}
+
+p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.img {
+  height: 300px;
+  background-image: url('https://media.istockphoto.com/id/1528033152/pt/foto/surprised-cat-covering-his-mouth-with-his-paws-on-a-pink-background.jpg?s=1024x1024&w=is&k=20&c=4kRZw7UELLoilOT99n2HOwKrFBJuL7oH4QxmX9EHtM8=');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+nav {
+  position: fixed;
+  left: -20px;
+  bottom: 20px;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: transform ease-in .6s;
+}
+
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+li {
+  margin: 35px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: transform ease-in .8s;
+  margin-left: -2px;
+}
+
+li + li {
+  margin-left: 25px;
+  transform: translateX(-25px);
+}
+
+li + li + li {
+  margin-left: 50px;
+  transform: translateX(-50px);
+}
+
+
+i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+.slide-in li {
+  transform: translate(0);
+}
